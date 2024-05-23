@@ -1,0 +1,98 @@
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ajusta según sea necesario */
+  background-image: url('/assets/fotos/asd.png');
+  margin: 0px;
+  background-size: cover;
+    padding: 50px 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.content {
+  position: relative;
+  color: white; /* Ajusta el color del texto según sea necesario */
+  text-align: left; /* Centra el texto */
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejor legibilidad */
+  border-radius: 10px;
+  width: 100%; /* Ajusta el ancho según sea necesario */
+    max-width: 790px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 20px;
+}
+.content1 {
+  position: relative;
+  color: white; /* Ajusta el color del texto según sea necesario */
+  text-align: left; /* Centra el texto */
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejor legibilidad */
+  border-radius: 10px;
+  width: 100%; /* Ajusta el ancho según sea necesario */
+    max-width: 395px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 20px;
+    justify-content: space-between;
+}
+.background-container2{
+  color:#9B0202;
+  position: relative;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* Ajusta según sea necesario */
+  background-image: url('/assets/fotos/qwe.png');
+  margin: 0px;
+  background-size: cover;
+  background-position: center top; 
+  background-size: 100% auto; 
+  
+    padding: 50px 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+.display-4{
+  color: white;
+  background: rgba(0, 0, 0, 0.5); 
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 24px;
+  border-radius: 100px;
+  padding: 60px 20px;
+  
+}
+.background-container3{
+  position: relative;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* Ajusta según sea necesario */
+  background-image: url('/assets/fotos/zxc.png');
+  margin: 0px;
+  background-size: cover;
+  background-position: center top; 
+  background-size: 100% auto; 
+  
+    padding: 50px 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+.breadcrumb li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.breadcrumb li a {
+  color: white; /* Ajusta el color del enlace según sea necesario */
+  text-decoration: none;
+}
+
+.breadcrumb li::after {
+  content: '>';
+  margin-left: 5px;
+}
+
+.breadcrumb li:last-child::after {
+  content: '';
+}
