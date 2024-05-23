@@ -1,28 +1,24 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
+
+
+interface SideNavToggle{
+  screenWidth: number;
+  collapsed: boolean;
+}
+
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, HomeComponent, RouterLink],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  boton="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium";
-  botond="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium";
-  userOccupation:string="Developer";
-  
-  title = 'proy_natural';
-  recivirMensaje($event:string){
-    console.log($event);
-  }
-  isMobileMenuOpen = false;
+  title = 'servicios';
 
-  habilitar() {
-    this.isMobileMenuOpen = !this.isMobileMenuOpen;
-  }
-  activar(){
-    this.botond=this.boton;
+  isSideNavCollapsed=false;
+  screeenWidth=0;
+
+  onToggleSideNav(data: SideNavToggle): void{
+    this.screeenWidth = data.screenWidth;
+    this.isSideNavCollapsed = data.collapsed;
   }
 }
