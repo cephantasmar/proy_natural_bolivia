@@ -1,0 +1,23 @@
+<div>asfafssaf</div>
+
+<div>
+    <h1>Crear Usuario</h1>
+
+    <form [formGroup]="userForm"(ngSubmit)="createUser">
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre">
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" formControlName="edad">
+
+        <button type="submit"[disabled]="!userForm.valid"></button>
+    </form>
+    <h1>Listar Usuarios</h1>
+    <ul>
+        <li *ngFor="let user of users; trackBy: trackById">
+            <p>ID: {{user.id}}</p>
+            <p>NOmbre: {{user.nombre}}</p>
+            <p>Edad: {{user.edad}}</p>
+
+        </li>
+    </ul>
+</div>
